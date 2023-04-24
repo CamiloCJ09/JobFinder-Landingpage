@@ -57,7 +57,7 @@ export default function Questions() {
           </Resposta>
         </Lista>
       </PerguntasCard>
-      <Informacao href="/">More Info</Informacao>
+      <Informacao href="/">Más información</Informacao>
     </Container>
   );
 }

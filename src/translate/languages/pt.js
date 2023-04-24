@@ -2,7 +2,7 @@ const StringsComuns = {
   pt: {
       components: {
           about: {
-            titulo: "Una conexío rapida y sencilla entre estudiantes y empresas",
+            titulo: "Una conexíon rapida y sencilla entre estudiantes y empresas",
             paragrafo:"Una plataforma que te permite dar el siguiente paso en tu carrera profesional y encontrar el trabajo de tus sueños.",
             buttons: {
               chrome: "Saber más",
