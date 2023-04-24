@@ -27,7 +27,6 @@ export default function About() {
               {i18n.t("about.buttons.chrome")}
             </Chrome>
             <Firefox
-              href="https://www.mozilla.org/pt-BR/firefox/new/"
               target="_blank"
             >
               {i18n.t("about.buttons.firefox")}
