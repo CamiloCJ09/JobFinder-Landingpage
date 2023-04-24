@@ -9,7 +9,7 @@ export default function Footer() {
     <Container>
       <Conjunto>
         <Link to="/">
-          <Logo src={logo} alt="logo" />
+          <p>Jobfinder</p>
         </Link>
 
         <Link to="/features">
