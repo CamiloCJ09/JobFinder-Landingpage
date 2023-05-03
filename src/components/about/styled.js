@@ -15,6 +15,7 @@ export const Container = styled.div`
 
 export const Linha = styled.div`
   display: flex;
+  margin: 25x 25px 100px 25px;
   align-items: center;
   justify-content: space-between;
   @media (max-width: 800px) {
@@ -77,7 +78,10 @@ export const Firefox = styled.a`
 export const Chrome = styled.a`
   color: ${(props) => props.theme.White};
   background: ${(props) => props.theme.Blue};
-  border: 2px solid ${(props) => props.theme.Blue};
+  border: 5px solid ${(props) => props.theme.Blue};
+  width: 300px;
+  padding: 10px;
+  aling-items: center;
   :hover {
     color: ${(props) => props.theme.Blue};
   }
@@ -90,4 +94,21 @@ export const Paragrafo = styled.p`
 export const Titulo = styled.h1`
   font-size: 2.5rem;
   margin-bottom: 1rem;
+`;
+
+
+export const Rota = styled.text`
+  margin: 1.4rem;
+  @media (max-width: 800px) {
+    color: ${(props) => props.theme.White};
+    margin: 2rem;
+    display: flex;
+    border-top: 1px solid ${(props) => props.theme.Grayish};
+    padding: 20px 3rem;
+    font-size: 1.3rem;
+    letter-spacing: 2px;
+  }
+  :hover {
+    color: ${(props) => props.theme.Red};
+  }
 `;

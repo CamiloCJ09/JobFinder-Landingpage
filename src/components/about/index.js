@@ -8,30 +8,29 @@ import {
   Titulo,
   Linha,
   Textos,
+  Rota,
 } from "./styled";
-
-import imagem from "./../../assets/images/illustration-hero.svg";
+import imagem from "./../../assets/images/jobfinder.png";
 import { i18n } from "./../../translate/i18n";
+import * as Scroll from 'react-scroll'
 export default function About() {
+  function scrollToBotton(){
+    var scroll    = Scroll.animateScroll;
+    scroll.scrollToBottom();
+  }
+ 
   return (
     <Container>
       <Linha>
         <Textos>
           <Titulo>{i18n.t("about.titulo")}</Titulo>
           <Paragrafo>{i18n.t("about.paragrafo")}</Paragrafo>
-          <Links>
-            <Chrome
+          <Chrome
               path="/"
               target="_blank"
             >
-              {i18n.t("about.buttons.chrome")}
+              <a onClick={scrollToBotton}>{i18n.t("about.buttons.chrome")}</a>
             </Chrome>
-            <Firefox
-              target="_blank"
-            >
-              {i18n.t("about.buttons.firefox")}
-            </Firefox>
-          </Links>
         </Textos>
         <ColunaImagem>
           <img src={imagem} alt="bookmark" />

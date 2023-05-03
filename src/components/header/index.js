@@ -32,9 +32,6 @@ export default function Header() {
   });
   return (
     <Container>
-      <Link to="/">
-        <p className="companyName">Jobfinder</p>
-      </Link>
       <MobileNav navToggle={navToggle}>
         <button onClick={alternar}>
           {navToggle ? (
@@ -50,24 +47,6 @@ export default function Header() {
       </MobileNav>
       <Conjunto navToggle={navToggle}>
         <Itens>
-          <Link to="/features">
-            <Rota>{i18n.t("rotas.features")}</Rota>
-          </Link>
-
-          <Link to="/extension">
-            <Rota>{i18n.t("rotas.pricing")}</Rota>
-          </Link>
-
-          <Link to="/contact">
-            <Rota>{i18n.t("rotas.contact")}</Rota>
-          </Link>
-
-          <BotaoLogin>
-            <Link to="/login">
-              <Rota>{i18n.t("rotas.login")}</Rota>
-            </Link>
-          </BotaoLogin>
-
           <Conjunto2>
             <Rede href="https://pt-br.facebook.com/" target="_blank">
               <Logo src={facebook} alt="logo" />
