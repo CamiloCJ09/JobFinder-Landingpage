@@ -22,7 +22,6 @@ function App() {
         <Route path="/contact" element={<Contact />} />
         <Route path="/extension" element={<Extension />} />
         <Route path="/sucessoEmail" element={<SucessoEmail />} />
-        <Route path="/login" element={<Login />} />
       </Routes>
       <Footer/>
     </ThemeProvider>
